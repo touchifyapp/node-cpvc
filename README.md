@@ -1,6 +1,6 @@
 # `@touchifyapp/cpvc` (Cross-Platform Volume Control)
 
-![https://github.com/touchifyapp/cpvc/actions](https://github.com/touchifyapp/cpvc/workflows/CI/badge.svg)
+![https://github.com/touchifyapp/node-cpvc/actions](https://github.com/touchifyapp/node-cpvc/workflows/CI/badge.svg)
 
 > Cross platform module for interacting with Audio Devices and handling System Audio.
 > Node bindings for the [cpvc](https://crates.io/crates/cpvc) crate.
