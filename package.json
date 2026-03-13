@@ -60,7 +60,7 @@
     "lint": "oxlint",
     "prepublishOnly": "napi prepublish -t npm",
     "test": "ava",
-    "preversion": "npm run lint && cargo clippy && npm run build && npm test",
+    "preversion": "npm run lint && cargo clippy && npm run build && npm test && git add .",
     "version": "napi version",
     "postversion": "git push && git push --tags"
   },
