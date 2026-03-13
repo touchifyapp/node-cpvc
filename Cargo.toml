@@ -19,3 +19,20 @@ napi-build = "2"
 lto = true
 codegen-units = 1
 strip = "symbols"
+
+[package.metadata.cross.target.x86_64-unknown-linux-musl]
+pre-build = [
+    "apt-get update && apt-get --assume-yes install libasound2-dev libpulse-dev",
+]
+
+[package.metadata.cross.target.armv7-unknown-linux-gnueabihf]
+pre-build = [
+    "dpkg --add-architecture $CROSS_DEB_ARCH",
+    "apt-get update && apt-get --assume-yes install libasound2-dev:$CROSS_DEB_ARCH libpulse-dev:$CROSS_DEB_ARCH",
+]
+
+[package.metadata.cross.target.aarch64-unknown-linux-musl]
+pre-build = [
+    "dpkg --add-architecture arm64",
+    "apt-get update && apt-get --assume-yes install libasound2-dev:arm64 libpulse-dev:arm64",
+]
