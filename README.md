@@ -14,6 +14,23 @@
 > Important<br>
 > `cpvc` requires [PulseAudio](https://en.wikipedia.org/wiki/PulseAudio) server to work on Linux.
 
+#### Prebuilt binaries
+
+| ✓   | Platform | arch         |
+| --- | -------- | ------------ |
+| ✅  | Windows  | x64          |
+| ✅  | Windows  | x86          |
+| ✅  | Windows  | arm64        |
+| ✅  | macOS    | x64          |
+| ✅  | macOS    | arm64        |
+| ✅  | Linux    | x64 (gnu)    |
+| ✅  | Linux    | x64 (musl)   |
+| ✅  | Linux    | arm (gnu)    |
+| ❌  | Linux    | arm64 (musl) |
+| ❌  | FreeBSD  | x64          |
+
+> Note: To build package from source, `libasound2-dev` and `libpulse-dev` libraries are required. (eg. `sudo apt install libasound2-dev libpulse-dev`).
+
 ## Installation
 
 ```bash
